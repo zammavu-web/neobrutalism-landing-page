@@ -129,7 +129,7 @@ main {
   background: var(--white);
   border: var(--border);
   box-shadow: 4px 4px 0 var(--black);
-  padding: 0.5rem;
+  padding: 0.9rem;
   border-radius: 8px;
   transform: rotate(-5deg);
 }
@@ -149,10 +149,10 @@ main {
 .deco-1 { top: 10px; left: -10px; }
 .deco-2 { top: 273px; right: 50px; }
 .deco-3 { top: 425px; left: 399px; }
-.deco-4 { top: 820px; right: -10px; }
+.deco-4 { top: 820px; right: 7px; }
 .deco-5 { top: 950px; right: 840px; }
 .deco-6 { top: 1100px; right: 80px; }
-.deco-7 { top: 1045px; left: -10px; }
+.deco-7 { top: 1100px; left: -10px; }
 
 /* Section z-index fix */
 section {
@@ -495,7 +495,7 @@ section {
   background: var(--white);
   border: var(--border);
   box-shadow: 4px 4px 0 var(--black);
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.7rem;
   text-decoration: none;
   color: var(--black);
   font-weight: 700;
