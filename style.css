@@ -527,6 +527,132 @@ section {
   opacity: 0.9;
 }
 
+/* Contact Form Section */
+.contact-form {
+  background: var(--yellow);
+  border: var(--border);
+  box-shadow: var(--shadow);
+  padding: 3rem 2.5rem;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+  transform: rotate(-0.5deg);
+  max-width: 700px;
+  margin-left:7px;
+  margin-right: auto;
+}
+
+.contact-form h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.form-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: var(--border);
+  box-shadow: 4px 4px 0 var(--black);
+  border-radius: 4px;
+  background: var(--white);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--black);
+}
+
+.form-group input:invalid:not(:placeholder-shown),
+.form-group textarea:invalid:not(:placeholder-shown) {
+  border-color: #ff0000;
+}
+
+.form-group input:valid:not(:placeholder-shown),
+.form-group textarea:valid:not(:placeholder-shown) {
+  border-color: #00aa00;
+}
+
+.error-message {
+  display: none;
+  font-size: 0.85rem;
+  color: #cc0000;
+  margin-top: 0.35rem;
+  font-weight: 600;
+}
+
+.form-group input:invalid:not(:placeholder-shown) ~ .error-message,
+.form-group textarea:invalid:not(:placeholder-shown) ~ .error-message {
+  display: block;
+}
+
+.submit-btn {
+  width: 100%;
+  background: var(--lime);
+  border: var(--border);
+  box-shadow: var(--shadow);
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: inherit;
+  letter-spacing: 0.02em;
+}
+
+.submit-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 4px 4px 0 var(--black);
+}
+
+.submit-btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: 2px 2px 0 var(--black);
+}
+
+.btn-icon {
+  font-size: 1.5rem;
+}
+
+.form-note {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -760,6 +886,58 @@ footer {
     font-size: 0.85rem;
   }
   
+  /* Contact Form Mobile */
+  .contact-form {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transform: rotate(0);
+    max-width: 100%;
+  }
+  
+  .contact-form h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+  
+  .form-group label {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.75rem 0.85rem;
+    font-size: 0.95rem;
+  }
+  
+  .error-message {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+  }
+  
+  .submit-btn {
+    padding: 0.85rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .btn-icon {
+    font-size: 1.3rem;
+  }
+  
+  .form-note {
+    font-size: 0.8rem;
+    margin-top: 0.85rem;
+  }
+
   /* Footer Mobile */
   footer {
     padding: 1.5rem 1rem;

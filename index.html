@@ -91,7 +91,7 @@
             <img src="assets/phone-call-telephone-svgrepo-com.svg" width="85">
           </div>
           <h3>Responsive</h3>
-          <p>Tampil perfect di semua device - mobile, tablet, desktop</p>
+          <p>Tampil perfect di semua device, mobile, tablet, desktop</p>
         </div>
         <div class="service-item">
           <div class="service-emoji">
@@ -126,6 +126,80 @@
         </a>
       </div>
       <p class="social-note">Open untuk diskusi project, sharing knowledge, atau collab!</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+      <h2>KIRIM PESAN</h2>
+      <p class="form-subtitle">Punya ide kolaborasi atau project? Isi form di bawah!</p>
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Nama Lengkap *</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            required 
+            minlength="3"
+            maxlength="50"
+            placeholder="Masukkan nama lengkap"
+            pattern="[A-Za-z\s]+"
+            title="Nama hanya boleh huruf dan spasi"
+          >
+          <span class="error-message">Nama minimal 3 karakter, hanya huruf</span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required
+            placeholder="nama@example.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="Format email tidak valid"
+          >
+          <span class="error-message">Email harus valid (contoh: user@domain.com)</span>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subjek *</label>
+          <input 
+            type="text" 
+            id="subject" 
+            name="subject" 
+            required
+            minlength="5"
+            maxlength="100"
+            placeholder="Topik/subjek pesan"
+            title="Subjek minimal 5 karakter"
+          >
+          <span class="error-message">Subjek minimal 5 karakter</span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Pesan *</label>
+          <textarea 
+            id="message" 
+            name="message" 
+            required
+            minlength="20"
+            maxlength="500"
+            rows="5"
+            placeholder="Tulis pesan kamu di sini (minimal 20 karakter)"
+            title="Pesan minimal 20 karakter"
+          ></textarea>
+          <span class="error-message">Pesan minimal 20 karakter</span>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <span class="btn-icon">📮</span>
+          KIRIM PESAN
+        </button>
+        
+        <p class="form-note">* Wajib diisi. Form ini untuk demo, data tidak disimpan.</p>
+      </form>
     </section>
   </main>
 
